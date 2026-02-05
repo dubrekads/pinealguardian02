@@ -1,224 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XQ6NH569Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2XQ6NH569Q');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Report: The Pineal Secret</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <title>Special Report: The Pineal Secret | Official Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-blue: #0a2540;
-            --accent-gold: #b38e5d;
-            --text-gray: #333;
-            --light-bg: #f4f7f9;
-            --cta-orange: #ff6b00;
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #1fa84f, #004aad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--text-gray);
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
+        .hero-bg {
+            background: radial-gradient(circle at top right, #f0f7ff 0%, #ffffff 70%);
         }
-
-        /* Header & Navigation */
-        header {
-            background: #fff;
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid var(--light-bg);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+        .cta-pulse {
+            animation: pulse 2s infinite;
         }
-
-        .logo {
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: var(--primary-blue);
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--text-gray);
-            margin-left: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .cta-nav {
-            background: var(--cta-orange);
-            color: white !important;
-            padding: 8px 18px;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 60px 5%;
-            text-align: center;
-            background: linear-gradient(180deg, #fff 0%, var(--light-bg) 100%);
-        }
-
-        .headline {
-            font-family: 'Merriweather', serif;
-            font-size: 2.5rem;
-            color: var(--primary-blue);
-            max-width: 900px;
-            margin: 0 auto 20px;
-            line-height: 1.2;
-        }
-
-        .sub-headline {
-            font-size: 1.2rem;
-            color: #d9534f;
-            font-weight: bold;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-        }
-
-        /* Section 1: Problem */
-        .section-problem {
-            padding: 50px 10%;
-            background: white;
-        }
-
-        .highlight-box {
-            border-left: 5px solid var(--accent-gold);
-            background: #fdfaf6;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        /* Section 2: Solution & Benefits */
-        .section-solution {
-            padding: 50px 10%;
-            background: var(--primary-blue);
-            color: white;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .benefit-card {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid var(--accent-gold);
-        }
-
-        /* Section 3: Scarcity */
-        .section-scarcity {
-            padding: 50px 10%;
-            text-align: center;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--cta-orange);
-            color: white;
-            padding: 20px 40px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(255,107,0,0.4);
-            transition: transform 0.2s;
-            margin-top: 20px;
-        }
-
-        .cta-button:hover {
-            transform: scale(1.05);
-        }
-
-        footer {
-            padding: 30px;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #777;
-            background: #f9f9f9;
-        }
-
-        @media (max-width: 768px) {
-            .headline { font-size: 1.8rem; }
-            nav { display: none; } /* Mobile simplicity */
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(22, 163, 74, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
         }
     </style>
 </head>
-<body>
+<body class="bg-white text-slate-900 border-t-8 border-blue-900">
 
-    <header>
-        <div class="logo">HEALTH INSIGHTS</div>
-        <nav>
-            <a href="#science">Science</a>
-            <a href="#faq">FAQ</a>
-            <a href="SUA_URL_AQUI" class="cta-nav">GET PINEAL GUARDIAN</a>
-        </nav>
-    </header>
-
-    <div class="hero">
-        <p class="sub-headline">Special Health Report for Seniors</p>
-        <h1 class="headline">The Common Chemical in Your Water That’s "Calcifying" Your Memory (And How to Stop It)</h1>
-        <p>New research reveals why thousands of Americans are struggling with "mental fog"—and it starts in a tiny gland in the center of your brain.</p>
-    </div>
-
-    <section class="section-problem">
-        <h2>Section 1: The Hidden Threat to Your Focus</h2>
-        <p>For decades, we’ve been told that memory loss is just a part of aging. But recent studies suggest a different culprit: <strong>Pineal Calcification.</strong></p>
-        <p>Daily exposure to fluoride and heavy metals creates a hard "crust" around your pineal gland, often called the 'Third Eye'. This doesn't just affect your sleep; it disconnects your brain's ability to process clear thoughts and maintain energy levels.</p>
-        <div class="highlight-box">
-            <strong>The Warning Signs:</strong> Persistent fatigue, forgetting names, poor sleep quality, and that feeling of being "disconnected."
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 py-5 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-black text-blue-900 tracking-tight italic">PINEAL<span class="text-green-600 font-extrabold tracking-normal">GUARDIAN</span></h1>
+            <div class="hidden md:flex gap-10 font-bold text-xs uppercase tracking-widest text-slate-400 items-center">
+                <a href="#science" class="hover:text-blue-600 transition">Science</a>
+                <a href="#benefits" class="hover:text-blue-600 transition">Benefits</a>
+                <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+                <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-blue-700 transition shadow-lg ml-4">VISIT OFFICIAL SITE</a>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <section class="section-solution" id="science">
-        <h2>Section 2: The Breakthrough Formula</h2>
-        <p><strong>Pineal Guardian</strong> is not just another vitamin. It is a proprietary blend of 9 powerful natural ingredients specifically chosen to support pineal health and cognitive function.</p>
-        
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <h3>Mental Clarity</h3>
-                <p>Supports the removal of metabolic waste, allowing for sharper focus and faster recall.</p>
+    <section class="hero-bg pt-20 pb-28 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
+            <div class="flex-1 text-center lg:text-left">
+                <div class="inline-block bg-red-50 text-red-700 px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest mb-8">
+                    ⚠️ ALERT: NEW NEUROLOGICAL DISCOVERY 2026
+                </div>
+                <h2 class="text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-8 text-slate-950">
+                    The Common Chemical in Your Water <span class="gradient-text">Calcifying Your Memory</span>
+                </h2>
+                <p class="text-xl text-slate-500 mb-10 leading-relaxed max-w-xl">
+                    Recent studies suggest that daily toxins are creating a "hard crust" around your pineal gland, leading to mental fog and fatigue. Learn how this 30-second ritual can help restore your peak performance.
+                </p>
+
+                <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes" class="cta-pulse inline-block bg-green-600 text-white text-2xl font-black px-14 py-7 rounded-3xl shadow-2xl hover:bg-green-700 transition transform">
+                    CHECK STOCK AVAILABILITY →
+                </a>
+                
+                <p class="mt-6 text-sm font-bold text-slate-400 italic">Verify if the 90-day discount is still active on the next page</p>
             </div>
-            <div class="benefit-card">
-                <h3>Deep Sleep</h3>
-                <p>A healthy pineal gland regulates your natural sleep cycle, helping you wake up refreshed.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Long-Term Protection</h3>
-                <p>Rich in antioxidants that shield your brain cells from daily environmental toxins.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Energy Levels</h3>
-                <p>No more mid-day crashes. Experience sustained vitality throughout the day.</p>
+
+            <div class="flex-1 text-center">
+                <div class="relative inline-block">
+                    <div class="absolute -inset-4 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
+                    <img src="3-bottles.webp" alt="Pineal Guardian Bottles" class="relative w-full max-w-md mx-auto drop-shadow-[0_45px_45px_rgba(0,0,0,0.18)] mb-10">
+                </div>
+                <div class="flex flex-col items-center">
+                    <p class="text-xs font-black text-slate-500 uppercase tracking-[0.2em] italic">Join 10,000+ Americans Restoring Clarity</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section-scarcity">
-        <h2>Section 3: Limited Availability</h2>
-        <p>Due to recent media attention, demand for Pineal Guardian has surged. We currently cannot guarantee stock for orders placed after today.</p>
-        <p><em>Check the official website to see if the 90-day discounted package is still available in your region.</em></p>
-        
-        <a href="SUA_URL_AQUI" class="cta-button">SEE IF PINEAL GUARDIAN IS IN STOCK</a>
-        <p style="margin-top: 15px; font-size: 0.9rem;">(Clicking the button will take you to the secure official store)</p>
+    <section id="science" class="py-32 bg-slate-950 text-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-center text-4xl md:text-5xl font-extrabold mb-12 italic text-blue-400">Section 1: The Hidden Threat</h2>
+            <div class="space-y-8 text-lg text-slate-400 leading-loose text-justify">
+                <p>
+                    For decades, aging was blamed for memory loss. However, science now points to <strong>Environmental Calcification</strong>. Fluoride and heavy metals found in everyday water supplies accumulate in the pineal gland—the brain's master regulator.
+                </p>
+                <p>
+                    When this gland is "shielded" by calcium deposits, your circadian rhythm breaks down, leading to chronic fatigue, brain fog, and a lack of focus that no amount of coffee can fix.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mt-16">
+                <div class="p-8 rounded-3xl bg-red-900/10 border border-red-900/20">
+                    <h4 class="text-xl font-bold text-red-400 mb-4 uppercase">The Problem</h4>
+                    <p class="text-sm leading-relaxed text-slate-300">Toxin buildup causes the pineal gland to calcify, disconnecting your brain's natural focus and energy centers.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-green-900/10 border border-green-900/20">
+                    <h4 class="text-xl font-bold text-green-400 mb-4 uppercase">The Solution</h4>
+                    <p class="text-sm leading-relaxed text-slate-300">Pineal Guardian™ uses 9 rare botanicals to support the body's natural decalcification and detoxification processes.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer id="faq">
-        <p><strong>Frequently Asked Questions</strong></p>
-        <p>Is it safe? Yes, it's made in an FDA-registered facility. | Do I need a prescription? No, it is a natural supplement.</p>
-        <hr style="width: 50%; border: 0.5px solid #ddd; margin: 20px auto;">
-        <p>© 2026 Health Insights. All rights reserved.</p>
-        <p>DISCLAIMER: These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+    <section id="benefits" class="py-32 bg-white px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-5xl font-black text-slate-900 mb-8 italic">Section 2: Why it Works</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto mb-20">Discover how this proprietary blend transforms your daily neurological health from the inside out.</p>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="p-12 rounded-[3rem] bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-2xl group text-left">
+                    <div class="text-5xl mb-8 group-hover:scale-110 transition-transform">🧠</div>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-900 uppercase">Mental Sharpness</h3>
+                    <p class="text-slate-500 leading-relaxed">Experience "HD Clarity" in your thinking. No more walking into rooms and forgetting why you're there.</p>
+                </div>
+                <div class="p-12 rounded-[3rem] bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-2xl group text-left">
+                    <div class="text-5xl mb-8 group-hover:scale-110 transition-transform">⚡</div>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-900 uppercase">Natural Energy</h3>
+                    <p class="text-slate-500 leading-relaxed">By restoring the pineal gland's health, you unlock sustained energy levels without the jitters of stimulants.</p>
+                </div>
+                <div class="p-12 rounded-[3rem] bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-2xl group text-left">
+                    <div class="text-5xl mb-8 group-hover:scale-110 transition-transform">🛡️</div>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-900 uppercase">Neuro-Protection</h3>
+                    <p class="text-slate-500 leading-relaxed">Antioxidant-rich ingredients like Moringa shield your delicate brain cells from future oxidative stress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-blue-900 text-white px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black mb-8 italic">Section 3: Limited Supply Notice</h2>
+            <p class="text-xl text-blue-200 mb-12">Because we use rare, high-purity ingredients, our manufacturing process takes 3 months. Current stock is extremely limited.</p>
+            <a href="https://pinealguardianvip.com/ds/indexts.php#aff=ErikMoraes" class="cta-pulse inline-block bg-green-600 text-white text-3xl font-black px-16 py-8 rounded-[2rem] shadow-2xl hover:bg-green-700 transition">
+                SECURE YOUR BOTTLES NOW →
+            </a>
+            <p class="mt-8 text-blue-300 font-bold uppercase text-xs tracking-widest">Backed by a 60-Day 100% Money Back Guarantee</p>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-slate-50 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-black mb-12 text-center text-blue-900 italic uppercase">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <p class="font-bold text-blue-900 mb-2">Is Pineal Guardian safe?</p>
+                    <p class="text-slate-600 text-sm">Yes. It is made in an FDA-registered facility following strict GMP standards using 100% natural ingredients.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <p class="font-bold text-blue-900 mb-2">How long until I see results?</p>
+                    <p class="text-slate-600 text-sm">Most users report feeling sharper and sleeping better within the first 2 weeks, with best results after 90 days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-500 py-20 px-6 text-center text-xs uppercase tracking-widest">
+        <div class="max-w-4xl mx-auto">
+            <p class="mb-10 leading-loose">
+                STATUTORY DISCLAIMER: The content of this site is for informational purposes only. These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary.
+            </p>
+            <p class="font-black text-slate-400">© 2026 PINEAL GUARDIAN. OFFICIAL PARTNER SITE. ALL RIGHTS RESERVED.</p>
+            <div class="mt-8 flex justify-center gap-10 underline font-bold">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
     </footer>
 
 </body>
